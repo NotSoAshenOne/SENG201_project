@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.GameRoundController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="towerOneLabel" text="Tower 1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+      <Label fx:id="towerTwoLabel" text="Tower 2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+      <Label fx:id="towerThreeLabel" text="Tower 3" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#roundMenuPressed" text="Menu" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="2.0" top="4.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="inventoryButton" mnemonicParsing="false" onAction="#inventoryPressed" text="Inventory" GridPane.columnSpan="2" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="53.0" top="4.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="shopButton" mnemonicParsing="false" onAction="#shopPressed" text="Shop" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="4.0" />
+         </GridPane.margin>
+      </Button>
+      <ListView fx:id="upcomingListView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </ListView>
+      <Button fx:id="nextRoundButton" alignment="CENTER" mnemonicParsing="false" onAction="#nextRoundPressed" text="        Go         " GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <ListView fx:id="waterListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="8.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="eggListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="8.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="earthListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="8.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="airListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="8.0" left="4.0" right="4.0" top="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="fireListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="8.0" left="4.0" right="4.0" top="4.0" />
+         </GridPane.margin></ListView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Rounds:" />
+            <Label fx:id="roundLabel" layoutX="14.0" layoutY="31.0" text="Label" />
+            <Label layoutX="14.0" layoutY="67.0" text="Coins:" />
+            <Label fx:id="coinsLabel" layoutX="16.0" layoutY="84.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="finishButton" mnemonicParsing="false" onAction="#finishButtonPressed" text="Finish" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <ListView fx:id="towerExample" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label text="Upcoming Carts:" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets left="4.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

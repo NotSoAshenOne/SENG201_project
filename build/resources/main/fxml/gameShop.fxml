@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.team0.gui.GameShopController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="shopExitButton" mnemonicParsing="false" onAction="#shopExitPressed" text="Exit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Label alignment="CENTER" text="Shop" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="shopFire" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="shopEgg" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="shopEarth" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="fireUp" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="eggUp" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="4.0" />
+         </GridPane.margin></ListView>
+      <ListView fx:id="earthUp" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="4.0" />
+         </GridPane.margin></ListView>
+      <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="eggUpButton" mnemonicParsing="false" onAction="#buyEggUp" text="Egg Upgrade 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Button fx:id="buyEggButton" disable="true" mnemonicParsing="false" onAction="#buyEgg" text="Buy Egg Tower" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="fireUpButton" mnemonicParsing="false" onAction="#buyFireUp" text="Fire Upgrade 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Button fx:id="buyFireButton" disable="true" mnemonicParsing="false" onAction="#buyFire" text="Buy Fire Tower" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="buyEarthUp" mnemonicParsing="false" onAction="#buyEarthUp" text="Earth Upgrade 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Button fx:id="buyEarthButton" disable="true" mnemonicParsing="false" onAction="#buyEarth" text="Buy Earth Tower" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <ListView fx:id="shopWater" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="shopAir" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" />
+         </GridPane.margin>
+      </ListView>
+      <Button fx:id="buyWaterButton" disable="true" mnemonicParsing="false" onAction="#buyWater" text="Buy Water Tower" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <Button fx:id="buyAirButton" disable="true" mnemonicParsing="false" onAction="#buyAir" text="Buy Air Tower" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+      <ListView fx:id="waterUp" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="4.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="waterLevel" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="8.0" right="8.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="fireLevel" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="8.0" right="8.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="eggLevel" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="8.0" right="8.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="earthLevel" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="8.0" right="8.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="airUp" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="4.0" />
+         </GridPane.margin>
+      </ListView>
+      <ListView fx:id="airLevel" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="4.0" left="8.0" right="8.0" />
+         </GridPane.margin>
+      </ListView>
+      <Button fx:id="waterUpButton" mnemonicParsing="false" onAction="#buyWaterUp" text="Water Upgrade 1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+      <Button fx:id="buyAirUp" mnemonicParsing="false" onAction="#buyAirUp" text="Air Upgrade 1" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+      <Button fx:id="waterLevelButton" mnemonicParsing="false" onAction="#buyWaterLevel" text="Water Upgrade 2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+      <Button fx:id="fireLevelButton" mnemonicParsing="false" onAction="#buyFireLevel" text="Fire Upgrade 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+      <Button fx:id="eggLevelButton" mnemonicParsing="false" onAction="#buyEggLevel" text="Egg Upgrade 2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+      <Button fx:id="earthLevelButton" mnemonicParsing="false" onAction="#buyEarthLevel" text="Earth Upgrade 2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+      <Button fx:id="airLevelButton" mnemonicParsing="false" onAction="#buyAirLevel" text="Air Upgrade 2" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+   </children>
+</GridPane>
