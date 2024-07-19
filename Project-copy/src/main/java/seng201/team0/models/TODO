@@ -1,0 +1,36 @@
+WEEKLY EFFORT REGISTRY!!!WEEKLY EFFORT REGISTRY!!!WEEKLY EFFORT REGISTRY!!!WEEKLY EFFORT REGISTRY!!!
+
+
+Unit Tests
+
+Readme file
+Report
+Class UML diagrams
+
+
+
+!! check settings carrying through correctly to main function
+
+DONE:-----------------------------------
+
+Rework NextCart [DONE]
+Tower ownership [DONE]
+Tower break method [DONE]
+    send back to sale [DONE]
+Coins can be negative [DONE]
+Check Round over [DONE]
+Tower Reserve and Current lists [DONE]
+Power Ups
+Difficulty?
+    third one
+Fix the singleton [DONE]
+Selling Towers [DONE]
+Reserve Towers [DONE]
+Name Errors
+List views of towers
+    Attributes - inShop, inReserve, inOwned
+Upgrade Towers
+Game end screen
+    if coins are negative
+Import all the things
+JavaDoc [DONE]
